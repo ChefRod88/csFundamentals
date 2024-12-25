@@ -2,22 +2,15 @@
 
 class Car
 {
-    String make;
-    String model;
-    int year;
-    String color;
+  String model;
+  public static int numberOfCars;
 
-    public Car(String make, String model, int year, String color)
-    {
-        this.make = make;
-        this.model = model;
-        this.year = year;
-        this.color = color;
-    }
+  public Car(String model)
+  {
+    this.model = model;
+    numberOfCars++;
+  }
+  
+  
 
-    public void Drive()
-    {
-        Console.WriteLine("You drive the " + color + " " + make + " " + model);
-    }
-      
 }
