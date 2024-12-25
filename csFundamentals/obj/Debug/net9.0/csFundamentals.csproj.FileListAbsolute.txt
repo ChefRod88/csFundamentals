@@ -1,0 +1,14 @@
+C:\Users\VDI-User\RiderProjects\csFundamentals\csFundamentals\bin\Debug\net9.0\csFundamentals.exe
+C:\Users\VDI-User\RiderProjects\csFundamentals\csFundamentals\bin\Debug\net9.0\csFundamentals.deps.json
+C:\Users\VDI-User\RiderProjects\csFundamentals\csFundamentals\bin\Debug\net9.0\csFundamentals.runtimeconfig.json
+C:\Users\VDI-User\RiderProjects\csFundamentals\csFundamentals\bin\Debug\net9.0\csFundamentals.dll
+C:\Users\VDI-User\RiderProjects\csFundamentals\csFundamentals\bin\Debug\net9.0\csFundamentals.pdb
+C:\Users\VDI-User\RiderProjects\csFundamentals\csFundamentals\obj\Debug\net9.0\csFundamentals.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VDI-User\RiderProjects\csFundamentals\csFundamentals\obj\Debug\net9.0\csFundamentals.AssemblyInfoInputs.cache
+C:\Users\VDI-User\RiderProjects\csFundamentals\csFundamentals\obj\Debug\net9.0\csFundamentals.AssemblyInfo.cs
+C:\Users\VDI-User\RiderProjects\csFundamentals\csFundamentals\obj\Debug\net9.0\csFundamentals.csproj.CoreCompileInputs.cache
+C:\Users\VDI-User\RiderProjects\csFundamentals\csFundamentals\obj\Debug\net9.0\csFundamentals.dll
+C:\Users\VDI-User\RiderProjects\csFundamentals\csFundamentals\obj\Debug\net9.0\refint\csFundamentals.dll
+C:\Users\VDI-User\RiderProjects\csFundamentals\csFundamentals\obj\Debug\net9.0\csFundamentals.pdb
+C:\Users\VDI-User\RiderProjects\csFundamentals\csFundamentals\obj\Debug\net9.0\csFundamentals.genruntimeconfig.cache
+C:\Users\VDI-User\RiderProjects\csFundamentals\csFundamentals\obj\Debug\net9.0\ref\csFundamentals.dll
