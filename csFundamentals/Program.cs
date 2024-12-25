@@ -4,21 +4,21 @@ using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Linq;
 
-namespace csFundamentals  // static = modifier to declare a static member, which belongs to the class itself
-                            // rather than to any specific object
+namespace csFundamentals  // overloaded constaructors = technique to create multiple constructors,
+                            // with different set of parameters.
+                            // name + parameters = signature
 {
     public class Program
     {
         static void Main(string[] args)
         {
-            Car car1 = new Car("Mustang");
-            Car car2 = new Car("Corvette");
-            Car car3 = new Car("Honda");
+            Pizza pizza1 = new Pizza("white","tomato","yellow", "Sausage");
+            Pizza pizza2 = new Pizza("wheat", "bechamel", "gruyere");
             
-            Console.WriteLine(Car.numberOfCars);
             
-
-         Console.ReadKey();
+            
+            
+            Console.ReadKey();
         }
     }
 
