@@ -12,3 +12,4 @@ C:\Users\VDI-User\RiderProjects\csFundamentals\csFundamentals\obj\Debug\net9.0\r
 C:\Users\VDI-User\RiderProjects\csFundamentals\csFundamentals\obj\Debug\net9.0\csFundamentals.pdb
 C:\Users\VDI-User\RiderProjects\csFundamentals\csFundamentals\obj\Debug\net9.0\csFundamentals.genruntimeconfig.cache
 C:\Users\VDI-User\RiderProjects\csFundamentals\csFundamentals\obj\Debug\net9.0\ref\csFundamentals.dll
+C:\Users\VDI-User\RiderProjects\csFundamentals\csFundamentals\obj\Debug\net9.0\csFundamentals.sourcelink.json
