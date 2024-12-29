@@ -12,19 +12,33 @@ namespace csFundamentals
     {
         static void Main(string[] args)
         {
-            int[] numbers = Enumerable.Range(1, 100).ToArray();
-            int count = 0;
+         List<int> numbers = new List<int>();
+         int sum = 0;
 
+         while (true)
+         {
+             Console.WriteLine("Enter number (or type 'ok' to exit): ");
+             string input = Console.ReadLine();
 
-            foreach (var num in numbers)
-            {
-                if (num % 3 == 0)
-                {
-                    count++;
-                }
-                    
-            }
-            Console.WriteLine($"Count of numbers divisible by 3 between 1 and 100: {count}");
+             if (input.ToLower() == "ok")
+             {
+                 break;
+             }
+             else if (int.TryParse(input, out int number))
+             {
+                 numbers.Add(number);
+                 sum += number;
+                 Console.WriteLine($"Number entered: {number} was added to the list.");
+             }
+             else
+             {
+                 Console.WriteLine("Invalid input. Try again.");
+             }
+             Console.WriteLine($"The sum of the numbers is {sum}.");
+         }
+         
+         
+         
         }
         
     }
