@@ -6,26 +6,21 @@ class Program
 {
     static void Main()
     {
-        string[] names = new string[6];
-        
-        Console.WriteLine($"Please enter your name:"); // user enters their name 
-        
-        var input =Console.ReadLine(); // takes input
-        
-        names[0] = input;
-        names[1] = "Amos";
-        names[2] = "Chery";
+       int[] inputs = new int[5];
+       
+       Console.WriteLine("Please enter 5 different input numbers.");
 
-        Array.Reverse(names);
-        Console.WriteLine("Effect of Reverse()");
-        foreach (var n in names)
-            Console.WriteLine(n);
-        
-        string[] names2 = new string[6];
-        Array.Copy(names, names2, names.Length);
-        foreach (var n in names2)
-            Console.WriteLine(n);
-        
+       for (int i = 0; i < inputs.Length; i++)
+       {
+           Console.Write($"Input {i + 1 }: ");
+           inputs[i] = Convert.ToInt32(Console.ReadLine());
+       }
+       
+       Console.WriteLine("\nYou entered:");
+       foreach (int i in inputs)
+       {
+           Console.WriteLine(i);
+       }
 
     }
 }
