@@ -12,33 +12,16 @@ namespace csFundamentals
     {
         static void Main(string[] args)
         {
-         List<int> numbers = new List<int>();
-         int sum = 0;
+            //Single Dimension Arrays
+            //var numbers = new int [5]; // or var numbers = new int [5] {1, 2, 3, 4, 5 };
+            /*numbers[0] = 1; // Assigned elements to each index position of array 
+            numbers[1] = 2;
+            numbers[2] = 3;
+            numbers[3] = 4;
+            numbers[4] = 5;*/
+            
+            // C sharp has two kinds of arrays: Rectangular and Jagged Arrays
 
-         while (true)
-         {
-             Console.WriteLine("Enter number (or type 'ok' to exit): ");
-             string input = Console.ReadLine();
-
-             if (input.ToLower() == "ok")
-             {
-                 break;
-             }
-             else if (int.TryParse(input, out int number))
-             {
-                 numbers.Add(number);
-                 sum += number;
-                 Console.WriteLine($"Number entered: {number} was added to the list.");
-             }
-             else
-             {
-                 Console.WriteLine("Invalid input. Try again.");
-             }
-             Console.WriteLine($"The sum of the numbers is {sum}.");
-         }
-         
-         
-         
         }
         
     }
