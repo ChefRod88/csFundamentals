@@ -12,17 +12,19 @@ namespace csFundamentals
     {
         static void Main(string[] args)
         {
-            var random = new Random();
-            
-            const int passwordLength = 10;
-            var buffer = new char[passwordLength];
-            for (var i = 0; i < passwordLength; i++)
-                buffer[i] = (char)('a' + random.Next(0, 26));
-            
-            var password = new string(buffer);
-            
-            Console.WriteLine(password);
+            int[] numbers = Enumerable.Range(1, 100).ToArray();
+            int count = 0;
 
+
+            foreach (var num in numbers)
+            {
+                if (num % 3 == 0)
+                {
+                    count++;
+                }
+                    
+            }
+            Console.WriteLine($"Count of numbers divisible by 3 between 1 and 100: {count}");
         }
         
     }
