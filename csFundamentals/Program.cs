@@ -1,42 +1,50 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace csFundamentals
+class Program
 {
-    
-    
-    public class Program
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-            var numbers = new List<int>() {1, 2, 3}; //create a list and intialize
-            numbers.Add(1); // add numbers to end of list
-            numbers.Add(2);
-            numbers.AddRange(new int[3] {5, 6, 7});// add a range of numbers to the list
+        List<string> names = new List<string>();
 
-            foreach (var num in numbers)
-                Console.WriteLine(num);
-            
-            Console.WriteLine("Index of 1:" + numbers.IndexOf(1));
-            Console.WriteLine("Index of 1:" + numbers.LastIndexOf(1));
-            
-            Console.WriteLine("Count" + numbers.Count);
-            
-            numbers.Remove(1);
-            foreach (var num in numbers)
-                Console.WriteLine(num);
-            
-
-            
-        }
+        Console.WriteLine("Enter names of people who liked your post (press Enter to stop):");
         
+        while (true)
+        {
+            string input = Console.ReadLine();
+
+            // Stop asking for names if the user presses Enter without typing anything
+            if (string.IsNullOrWhiteSpace(input))
+            {
+                break;
+            }
+
+            names.Add(input);
+        }
+
+        // Display the appropriate message based on the number of names
+        if (names.Count == 0)
+        {
+            // No one liked the post
+            Console.WriteLine("No likes to display.");
+        }
+        else if (names.Count == 1)
+        {
+            // One person liked the post
+            Console.WriteLine($"{names[0]} likes your post.");
+        }
+        else if (names.Count == 2)
+        {
+            // Two people liked the post
+            Console.WriteLine($"{names[0]} and {names[1]} like your post.");
+        }
+        else
+        {
+            // More than two people liked the post
+            int othersCount = names.Count - 2;
+            Console.WriteLine($"{names[0]}, {names[1]} and {othersCount} others like your post.");
+        }
     }
-    
-    
-    
 }
 
 
