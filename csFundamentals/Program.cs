@@ -12,19 +12,12 @@ namespace csFundamentals
     {
         static void Main(string[] args)
         {
-            var name = "John Smith";
-            /*for (int i = 0; i < name.Length; i++)
-            {
-                Console.WriteLine(name[i]);
-                
-            }*/
+            var numbers = new int[] {1,2,3,4};
 
-            foreach (var character in name)
+            foreach (var number in numbers)
             {
-                Console.WriteLine(character);
+                Console.WriteLine(number);
             }
-            
-        
         }
     }
 }
