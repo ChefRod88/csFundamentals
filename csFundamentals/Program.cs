@@ -12,43 +12,25 @@ namespace csFundamentals
     {
         static void Main(string[] args)
         {
-            var numbers = new[] {3, 7, 9, 2, 14, 6};
+            var numbers = new List<int>() {1, 2, 3}; //create a list and intialize
+            numbers.Add(1); // add numbers to end of list
+            numbers.Add(2);
+            numbers.AddRange(new int[3] {5, 6, 7});// add a range of numbers to the list
+
+            foreach (var num in numbers)
+                Console.WriteLine(num);
             
-            //Length returns size of the array
-            Console.WriteLine($"Length: {numbers.Length}");
+            Console.WriteLine("Index of 1:" + numbers.IndexOf(1));
+            Console.WriteLine("Index of 1:" + numbers.LastIndexOf(1));
             
-            //IndexOf()
-            var index = Array.IndexOf(numbers, 9);
-            Console.WriteLine($"Index of 9 : {index}");
+            Console.WriteLine("Count" + numbers.Count);
             
-            //Clear()
-            Array.Clear(numbers, 0, 2);
-            
-            Console.WriteLine($"Effect of Clear()");
-            foreach (var n in numbers)
-                Console.WriteLine(n);
-            
-            //Copy()
-            var another = new int[3];
-            Array.Copy(numbers, another, 3);
-            
-            Console.WriteLine("Effect of Copy()");
-            foreach (var n in another)
-                Console.WriteLine(n);
-            
-            // Sort()
-            Array.Sort(another);
-            Console.WriteLine("Effect of Sort()");
-            foreach (var n in numbers)
-                Console.WriteLine(n);
-            
-            //Reverse()
-            Array.Reverse(numbers);
-            Console.WriteLine("Effect of Reverse()");
-            foreach (var n in numbers)
-                Console.WriteLine(n);
+            numbers.Remove(1);
+            foreach (var num in numbers)
+                Console.WriteLine(num);
             
 
+            
         }
         
     }
