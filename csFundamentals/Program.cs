@@ -12,15 +12,42 @@ namespace csFundamentals
     {
         static void Main(string[] args)
         {
-            //Single Dimension Arrays
-            //var numbers = new int [5]; // or var numbers = new int [5] {1, 2, 3, 4, 5 };
-            /*numbers[0] = 1; // Assigned elements to each index position of array 
-            numbers[1] = 2;
-            numbers[2] = 3;
-            numbers[3] = 4;
-            numbers[4] = 5;*/
+            var numbers = new[] {3, 7, 9, 2, 14, 6};
             
-            // C sharp has two kinds of arrays: Rectangular and Jagged Arrays
+            //Length returns size of the array
+            Console.WriteLine($"Length: {numbers.Length}");
+            
+            //IndexOf()
+            var index = Array.IndexOf(numbers, 9);
+            Console.WriteLine($"Index of 9 : {index}");
+            
+            //Clear()
+            Array.Clear(numbers, 0, 2);
+            
+            Console.WriteLine($"Effect of Clear()");
+            foreach (var n in numbers)
+                Console.WriteLine(n);
+            
+            //Copy()
+            var another = new int[3];
+            Array.Copy(numbers, another, 3);
+            
+            Console.WriteLine("Effect of Copy()");
+            foreach (var n in another)
+                Console.WriteLine(n);
+            
+            // Sort()
+            Array.Sort(another);
+            Console.WriteLine("Effect of Sort()");
+            foreach (var n in numbers)
+                Console.WriteLine(n);
+            
+            //Reverse()
+            Array.Reverse(numbers);
+            Console.WriteLine("Effect of Reverse()");
+            foreach (var n in numbers)
+                Console.WriteLine(n);
+            
 
         }
         
