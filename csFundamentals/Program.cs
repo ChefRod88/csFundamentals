@@ -12,20 +12,24 @@ namespace csFundamentals
     {
         static void Main(string[] args)
         {
-            while (true)
-            {
-                Console.Write("Please enter a number:");
-                var input = Console.ReadLine();
+            var random = new Random();
+            
+            const int passwordLength = 10;
+            var buffer = new char[passwordLength];
+            for (var i = 0; i < passwordLength; i++)
+                buffer[i] = (char)('a' + random.Next(0, 26));
+            
+            var password = new string(buffer);
+            
+            Console.WriteLine(password);
 
-                if (!String.IsNullOrWhiteSpace(input))
-                {
-                    Console.WriteLine("@Echo:" + input);
-                    continue;
-                }
-                break;
-            }
         }
+        
     }
+    
+    
+    
 }
+
 
 
