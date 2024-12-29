@@ -1,29 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 
 
 class Program
 {
     static void Main()
     {
-
         while (true)
         {
-            var numbers = new List<int>();
+            var numbers = new List<int> { 1, 2, 3, 4, 5};
         
-            Console.WriteLine("Please enter a number: ");
-            var input = Console.ReadLine();
-            for (int i = 0; i == 10 ; i++)
+            Console.Write("Enter numbers separated by commas: ");
+            numbers = Console.ReadLine().Split(',').Select(int.Parse).ToList();
+            for (int i = 0; i < numbers.Count; i++)
             {
-                Console.WriteLine(i);
+                if (numbers.Count == 0 || numbers.Count < 5)
+                {
+                    Console.WriteLine("Invalid List");
+                    Console.WriteLine("Retry");
+                    continue;
+                    
+                }
             }
 
-            if (input == "Quit")
-            {
-                break;
-            }
         }
-
     }
 }
 
