@@ -1,49 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
 
+
 class Program
 {
     static void Main()
     {
-        List<string> names = new List<string>();
-
-        Console.WriteLine("Enter names of people who liked your post (press Enter to stop):");
+        string[] names = new string[6];
         
-        while (true)
-        {
-            string input = Console.ReadLine();
+        Console.WriteLine($"Please enter your name:"); // user enters their name 
+        
+        var input =Console.ReadLine(); // takes input
+        
+        names[0] = input;
+        names[1] = "Amos";
+        names[2] = "Chery";
 
-            // Stop asking for names if the user presses Enter without typing anything
-            if (string.IsNullOrWhiteSpace(input))
-            {
-                break;
-            }
+        Array.Reverse(names);
+        Console.WriteLine("Effect of Reverse()");
+        foreach (var n in names)
+            Console.WriteLine(n);
+        
+        string[] names2 = new string[6];
+        Array.Copy(names, names2, names.Length);
+        foreach (var n in names2)
+            Console.WriteLine(n);
+        
 
-            names.Add(input);
-        }
-
-        // Display the appropriate message based on the number of names
-        if (names.Count == 0)
-        {
-            // No one liked the post
-            Console.WriteLine("No likes to display.");
-        }
-        else if (names.Count == 1)
-        {
-            // One person liked the post
-            Console.WriteLine($"{names[0]} likes your post.");
-        }
-        else if (names.Count == 2)
-        {
-            // Two people liked the post
-            Console.WriteLine($"{names[0]} and {names[1]} like your post.");
-        }
-        else
-        {
-            // More than two people liked the post
-            int othersCount = names.Count - 2;
-            Console.WriteLine($"{names[0]}, {names[1]} and {othersCount} others like your post.");
-        }
     }
 }
 
